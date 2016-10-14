@@ -28,6 +28,7 @@
 @xml: #f99449;
 @rust: #dea584;
 @go: #6a9fb5;
+@feature:#2fc330
 
 @gitignore: #3f535b;
 
@@ -241,6 +242,15 @@
 
     .tab.active & {
       color: saturate(@go, 100%);
+    }
+  }
+
+  .name.icon[data-name$=".feature"],
+  .title[data-name$=".feature"] {
+    color: saturate(@feature, 20%);
+
+    .tab.active & {
+      color: saturate(@feature, 100%);
     }
   }
 
